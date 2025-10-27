@@ -6,8 +6,8 @@ import { ProjectsSection } from "./components/projects-section";
 
 import contentData from "./data/content.json";
 import projectsData from "./data/projects.json";
-import { Header } from "@/app/components/global/header";
-import { Footer } from "@/app/components/global/footer";
+import { Header } from "@/app/components/global/Header";
+import { Footer } from "@/app/components/global/Footer";
 
 export default function HomePage() {
   const content = contentData as ContentData;
