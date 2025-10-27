@@ -1,12 +1,11 @@
 {
   "hero": {
-    "name": "Your Name",
-    "title": "Full Stack Developer",
+    "name": "Simon Erik Nyblom",
+    "title": "Frontend Developer with a passion for general development",
     "description": "Building digital experiences with modern web technologies. Focused on clean code, performance, and user experience.",
-    "email": "hello@example.com",
-    "github": "https://github.com/yourusername",
-    "linkedin": "https://linkedin.com/in/yourusername",
-    "twitter": "https://twitter.com/yourusername"
+    "email": "nyblomsimon@gmail.com",
+    "github": "https://github.com/sinyedu",
+    "linkedin": "https://linkedin.com/in/simonnyblom"
   },
   "about": {
     "title": "About",
@@ -18,9 +17,16 @@
     "Next.js",
     "Node.js",
     "Tailwind CSS",
-    "PostgreSQL",
+    "MySQL",
     "Git",
-    "REST APIs"
+    "REST APIs",
+    "Vanilla PHP",
+    "Postman",
+    "Docker",
+    "Sourcetree",
+    "Vue.js",
+    "SASS",
+    "HTML & CSS"
   ],
   "contact": {
     "title": "Get in Touch",

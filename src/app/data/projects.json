@@ -2,35 +2,67 @@
   "projects": [
     {
       "id": "1",
-      "title": "E-Commerce Platform",
-      "description": "A full-stack e-commerce solution with payment integration, inventory management, and admin dashboard.",
-      "technologies": ["Next.js", "TypeScript", "Stripe", "PostgreSQL"],
-      "link": "https://github.com/yourusername/project1",
-      "year": "2024"
+      "title": "Website for Online Risk Game",
+      "description": "A website for an online community that is build upon Warcraft III to play the classic board game Risk. The website includes leaderboard, news about the game and community, streams, a release form to catch the latest updates. Furthermore, it includes a game guide and a promotion for their upcoming new game!",
+      "technologies": [
+        "Next.js",
+        "TypeScript",
+        "React",
+        "Firebase",
+        "Tailwind CSS",
+        "SASS"
+      ],
+      "link": "https://github.com/Warcraft-3-Risk/risk-website",
+      "year": "2025"
     },
     {
       "id": "2",
-      "title": "Task Management App",
-      "description": "Collaborative task management tool with real-time updates, team workspaces, and analytics.",
-      "technologies": ["React", "Node.js", "Socket.io", "MongoDB"],
+      "title": "Project Management Tool",
+      "description": "Collaborative project management tool with real-time updates, task assignments, and progress tracking. Made this in our 2nd semester of our Advanced JavaScript Course.",
+      "technologies": [
+        "Vue",
+        "Node.js",
+        "JavaScript",
+        "Firebase",
+        "CSS",
+        "Firestore",
+        "Tailwind CSS"
+      ],
       "link": "https://github.com/yourusername/project2",
       "year": "2024"
     },
     {
       "id": "3",
-      "title": "Weather Dashboard",
-      "description": "Real-time weather tracking application with location-based forecasts and historical data visualization.",
-      "technologies": ["React", "TypeScript", "Chart.js", "OpenWeather API"],
-      "link": "https://github.com/yourusername/project3",
-      "year": "2023"
+      "title": "Fantasy Festival",
+      "description": "A fantasy-themed festival website featuring a commercial for the festival.",
+      "technologies": ["Vue", "JavaScript", "Firebase", "CSS"],
+      "link": "https://github.com/Sinyedu/Fantasy-Festival",
+      "year": "2024"
     },
     {
       "id": "4",
-      "title": "Portfolio CMS",
-      "description": "Headless CMS for managing portfolio content with markdown support and media management.",
-      "technologies": ["Next.js", "Prisma", "PostgreSQL", "AWS S3"],
-      "link": "https://github.com/yourusername/project4",
-      "year": "2023"
+      "title": "Locally hosted and created Wordpress pages",
+      "description": "Created different pages for different usages, such as E-Commerce, blogs, info sites etc. All pages are locally hosted using LocalWP.",
+      "technologies": ["Wordpress", "PHP", "SQL", "LocaleWP", "HTML", "CSS"],
+      "link": "",
+      "year": "2024"
+    },
+    {
+      "id": "5",
+      "title": "E-Sports Cinema",
+      "description": "A website dedicated to e-sports events, featuring live streams, event schedules, and player profiles. A website where you can book your seats for an exciting finals or an exciting game or just tournaments in general.",
+      "technologies": [
+        "Vanilla PHP",
+        "Simply.com",
+        "WAMPP",
+        "Tailwind CSS",
+        "MySQL",
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "link": "",
+      "year": "2025"
     }
   ]
 }

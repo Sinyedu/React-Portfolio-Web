@@ -1,5 +1,5 @@
 import { HeroContent } from "@/core/types";
-import { Github, Linkedin, Twitter, Mail } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 
 interface HeroSectionProps {
   content: HeroContent;
@@ -24,7 +24,7 @@ export function HeroSection({ content }: HeroSectionProps) {
         <div className="flex items-center gap-4 flex-wrap">
           <a
             href={`mailto:${content.email}`}
-            className="inline-flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground hover:bg-primary/90 transition-colors text-sm"
+            className="inline-flex items-center gap-2 px-4 py-2 border border-border hover:bg-muted transition-colors text-sm"
             aria-label="Email"
           >
             <Mail className="w-4 h-4" />
@@ -49,16 +49,6 @@ export function HeroSection({ content }: HeroSectionProps) {
           >
             <Linkedin className="w-4 h-4" />
             <span>LinkedIn</span>
-          </a>
-          <a
-            href={content.twitter}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-4 py-2 border border-border hover:bg-muted transition-colors text-sm"
-            aria-label="Twitter"
-          >
-            <Twitter className="w-4 h-4" />
-            <span>Twitter</span>
           </a>
         </div>
       </div>
