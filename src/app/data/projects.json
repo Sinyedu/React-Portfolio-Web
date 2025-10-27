@@ -1,0 +1,36 @@
+{
+  "projects": [
+    {
+      "id": "1",
+      "title": "E-Commerce Platform",
+      "description": "A full-stack e-commerce solution with payment integration, inventory management, and admin dashboard.",
+      "technologies": ["Next.js", "TypeScript", "Stripe", "PostgreSQL"],
+      "link": "https://github.com/yourusername/project1",
+      "year": "2024"
+    },
+    {
+      "id": "2",
+      "title": "Task Management App",
+      "description": "Collaborative task management tool with real-time updates, team workspaces, and analytics.",
+      "technologies": ["React", "Node.js", "Socket.io", "MongoDB"],
+      "link": "https://github.com/yourusername/project2",
+      "year": "2024"
+    },
+    {
+      "id": "3",
+      "title": "Weather Dashboard",
+      "description": "Real-time weather tracking application with location-based forecasts and historical data visualization.",
+      "technologies": ["React", "TypeScript", "Chart.js", "OpenWeather API"],
+      "link": "https://github.com/yourusername/project3",
+      "year": "2023"
+    },
+    {
+      "id": "4",
+      "title": "Portfolio CMS",
+      "description": "Headless CMS for managing portfolio content with markdown support and media management.",
+      "technologies": ["Next.js", "Prisma", "PostgreSQL", "AWS S3"],
+      "link": "https://github.com/yourusername/project4",
+      "year": "2023"
+    }
+  ]
+}

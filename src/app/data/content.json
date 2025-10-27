@@ -1,0 +1,30 @@
+{
+  "hero": {
+    "name": "Your Name",
+    "title": "Full Stack Developer",
+    "description": "Building digital experiences with modern web technologies. Focused on clean code, performance, and user experience.",
+    "email": "hello@example.com",
+    "github": "https://github.com/yourusername",
+    "linkedin": "https://linkedin.com/in/yourusername",
+    "twitter": "https://twitter.com/yourusername"
+  },
+  "about": {
+    "title": "About",
+    "content": "I'm a developer passionate about creating elegant solutions to complex problems. With expertise in React, TypeScript, and Node.js, I build scalable applications that users love. When I'm not coding, you'll find me exploring new technologies or contributing to open source."
+  },
+  "skills": [
+    "TypeScript",
+    "React",
+    "Next.js",
+    "Node.js",
+    "Tailwind CSS",
+    "PostgreSQL",
+    "Git",
+    "REST APIs"
+  ],
+  "contact": {
+    "title": "Get in Touch",
+    "description": "I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.",
+    "cta": "Send Message"
+  }
+}
