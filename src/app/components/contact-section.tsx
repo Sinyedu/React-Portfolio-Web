@@ -22,7 +22,7 @@ export function ContactSection({ content, email }: ContactSectionProps) {
         </p>
         <a
           href={`mailto:${email}`}
-          className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground hover:bg-primary/90 transition-colors text-sm font-medium"
+          className="px-4 py-3 border border-border bg-card hover:bg-muted transition-colors text-sm text-center"
         >
           {content.cta}
         </a>
