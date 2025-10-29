@@ -1,0 +1,18 @@
+[
+  {
+    "id": "1",
+    "role": "Frontend Developer Intern",
+    "company": "Grumsen Development ApS",
+    "companyLink": "https://grumsendev.dk/",
+    "period": "January 2025 - March 2025",
+    "description": "Worked with a team of developers to maintain web applications using React and TypeScript. Focused on enhancing user interfaces and creating responsive designs. Gained experience in collaborative development. Got used to using Sourcetree and Git for version control. Postman for API testing and Docker for containerization."
+  },
+  {
+    "id": "2",
+    "role": "Frontend Developer",
+    "company": "WC3 Risk Reforged Online Community",
+    "companyLink": "https://discord.gg/wc3risk",
+    "period": "March 2025 - May 2025",
+    "description": "Created a website for an online community centered around the classic board game Risk, built on Warcraft III. The site features a leaderboard, news updates, live streams, a game guide, and promotional content for upcoming releases. Technologies used include Next.js, TypeScript, React, Firebase, Tailwind CSS, and SASS."
+  }
+]

@@ -11,26 +11,26 @@
     "title": "About",
     "content": "I'm a developer passionate about creating elegant solutions to complex problems. With expertise in React, TypeScript, and Node.js, I build scalable applications that users love. When I'm not coding, you'll find me exploring new technologies or contributing to open source."
   },
-  "skills": [
-    "TypeScript",
-    "React",
-    "Next.js",
-    "Node.js",
-    "Tailwind CSS",
-    "MySQL",
-    "Git",
-    "REST APIs",
-    "Vanilla PHP",
-    "Postman",
-    "Docker",
-    "Sourcetree",
-    "Vue.js",
-    "SASS",
-    "HTML & CSS",
-    "Firebase",
-    "WordPress",
-    "Firestore"
-  ],
+  "skills": {
+    "Programming Languages": [
+      "TypeScript",
+      "JavaScript",
+      "PHP",
+      "Python",
+      "SQL",
+      "YML"
+    ],
+    "Frontend Frameworks": [
+      "React",
+      "Next.js",
+      "Vue.js",
+      "Tailwind CSS",
+      "SASS"
+    ],
+    "Backend & Databases": ["Node.js", "MySQL", "Firebase", "Firestore"],
+    "Tools & DevOps": ["Git", "Docker", "Postman", "Sourcetree", "WordPress"],
+    "APIs & Others": ["REST APIs"]
+  },
   "contact": {
     "title": "Get in Touch",
     "description": "I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.",

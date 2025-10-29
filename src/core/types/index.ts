@@ -5,7 +5,7 @@ export interface HeroContent {
   email: string;
   github: string;
   linkedin: string;
-  twitter: string;
+  twitter?: string;
   image?: string;
 }
 
@@ -23,8 +23,12 @@ export interface ContactContent {
 export interface ContentData {
   hero: HeroContent;
   about: AboutContent;
-  skills: string[];
-  contact: ContactContent;
+  skills: Record<string, string[]>;
+  contact: {
+    title: string;
+    description: string;
+    cta: string;
+  };
 }
 
 export interface Project {
@@ -38,4 +42,13 @@ export interface Project {
 
 export interface ProjectsData {
   projects: Project[];
+}
+
+export interface Experience {
+  id: string;
+  role: string;
+  company: string;
+  period: string;
+  description: string;
+  companyLink?: string;
 }

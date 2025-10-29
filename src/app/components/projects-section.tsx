@@ -15,7 +15,9 @@ export function ProjectsSection({ projects }: ProjectsSectionProps) {
         <div className="mb-6">
           <span className="text-sm text-muted-foreground">$ ls projects/</span>
         </div>
-        <h2 className="text-3xl md:text-4xl font-semibold mb-12">Projects</h2>
+        <h2 className="text-3xl md:text-4xl font-semibold mb-12 text-foreground dark:text-foreground-dark">
+          Projects
+        </h2>
 
         <div className="grid gap-6 md:grid-cols-2">
           {projects.map((project, index) => (
@@ -28,21 +30,21 @@ export function ProjectsSection({ projects }: ProjectsSectionProps) {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.6, delay: index * 0.15 }}
-              className="group border border-border bg-card p-6 hover:bg-muted transition-colors"
+              className="group border-border bg-card p-6 hover:bg-muted transition-colors border border-gray-300 dark:border-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 text-sm text-gray-900 dark:text-white"
             >
               <div className="flex items-start justify-between mb-4">
                 <div>
-                  <h3 className="text-xl font-medium mb-2 group-hover:text-accent transition-colors">
+                  <h3 className="text-xl font-medium mb-2 group-hover:text-accent transition-colors text-foreground dark:text-foreground-dark">
                     {project.title}
                   </h3>
-                  <span className="text-xs text-muted-foreground">
+                  <span className="text-xs text-muted-foreground dark:text-muted-foreground-dark">
                     {project.year}
                   </span>
                 </div>
-                <ExternalLink className="w-5 h-5 text-muted-foreground group-hover:text-accent transition-colors" />
+                <ExternalLink className="w-5 h-5 text-muted-foreground dark:text-muted-foreground-dark group-hover:text-accent transition-colors" />
               </div>
 
-              <p className="text-sm text-foreground/70 mb-4 leading-relaxed">
+              <p className="text-sm text-foreground/70 dark:text-foreground-dark/70 mb-4 leading-relaxed">
                 {project.description}
               </p>
 
@@ -50,7 +52,7 @@ export function ProjectsSection({ projects }: ProjectsSectionProps) {
                 {project.technologies.map((tech) => (
                   <span
                     key={tech}
-                    className="text-xs px-2 py-1 bg-secondary text-secondary-foreground"
+                    className="text-xs px-2 py-1 bg-secondary text-secondary-foreground rounded"
                   >
                     {tech}
                   </span>

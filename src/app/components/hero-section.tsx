@@ -63,7 +63,7 @@ export function HeroSection({ content }: HeroSectionProps) {
         <div className="flex items-center gap-4 flex-wrap justify-center">
           <a
             href={`mailto:${content.email}`}
-            className="inline-flex items-center gap-2 px-4 py-2 border border-border hover:bg-muted transition-colors text-sm rounded-2xl"
+            className="inline-flex items-center gap-2 px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-lg p-6 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors text-center text-xl text-gray-900 dark:text-white"
             aria-label="Email"
           >
             <Mail className="w-4 h-4" />
@@ -73,7 +73,7 @@ export function HeroSection({ content }: HeroSectionProps) {
             href={content.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-4 py-2 border border-border hover:bg-muted transition-colors text-sm rounded-2xl"
+            className="inline-flex items-center gap-2 px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-lg p-6 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors text-center text-xl text-gray-900 dark:text-white"
             aria-label="GitHub"
           >
             <Github className="w-4 h-4" />
@@ -83,7 +83,7 @@ export function HeroSection({ content }: HeroSectionProps) {
             href={content.linkedin}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-4 py-2 border border-border hover:bg-muted transition-colors text-sm rounded-2xl"
+            className="inline-flex items-center gap-2 px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-lg p-6 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors text-center text-xl text-gray-900 dark:text-white"
             aria-label="LinkedIn"
           >
             <Linkedin className="w-4 h-4" />
