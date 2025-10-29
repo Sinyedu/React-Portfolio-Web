@@ -1,4 +1,8 @@
+"use client";
+
 import { HeroContent } from "@/core/types";
+import Image from "next/image";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { Github, Linkedin, Mail } from "lucide-react";
 
 interface HeroSectionProps {
@@ -6,25 +10,60 @@ interface HeroSectionProps {
 }
 
 export function HeroSection({ content }: HeroSectionProps) {
+  const { scrollY } = useScroll();
+
+  const imageOpacity = useTransform(scrollY, [0, 300], [1, 0]);
+  const imageY = useTransform(scrollY, [0, 300], [0, -50]);
+
+  const textOpacity = useTransform(scrollY, [0, 400], [1, 0.7]);
+  const textY = useTransform(scrollY, [0, 400], [0, -20]);
+
   return (
-    <section className="container mx-auto px-4 py-24 md:py-32">
-      <div className="max-w-3xl">
-        <div className="mb-6">
-          <span className="text-sm text-muted-foreground">$ whoami</span>
+    <section className="relative min-h-screen flex items-center justify-center">
+      <motion.div
+        style={{ opacity: imageOpacity, y: imageY }}
+        className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden shadow-xl border-4 border-transparent bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 p-[3px]"
+      >
+        <div className="rounded-full overflow-hidden">
+          <Image
+            src="/img/simonhero.jpg"
+            alt={`${content.name} portrait`}
+            fill
+            className="object-cover"
+            priority
+          />
         </div>
-        <h1 className="text-4xl md:text-6xl font-semibold mb-4 text-balance">
+      </motion.div>
+
+      <motion.div
+        style={{ opacity: textOpacity, y: textY }}
+        className="absolute bottom-10 text-center px-4"
+      >
+        <h1 className="flex items-center text-4xl md:text-6xl font-semibold mb-4 gap-2">
           {content.name}
+          <Image
+            src="/flags/denmark.png"
+            alt="Danish flag"
+            width={40}
+            height={40}
+            className="rounded-sm"
+          />
+          <Image
+            src="/flags/finland.png"
+            alt="Finnish flag"
+            width={46}
+            height={46}
+            className="rounded-sm"
+          />
         </h1>
         <p className="text-xl md:text-2xl text-muted-foreground mb-6">
           {content.title}
         </p>
-        <p className="text-base md:text-lg text-foreground/80 mb-8 leading-relaxed max-w-2xl">
-          {content.description}
-        </p>
-        <div className="flex items-center gap-4 flex-wrap">
+
+        <div className="flex items-center gap-4 flex-wrap justify-center">
           <a
             href={`mailto:${content.email}`}
-            className="inline-flex items-center gap-2 px-4 py-2 border border-border hover:bg-muted transition-colors text-sm"
+            className="inline-flex items-center gap-2 px-4 py-2 border border-border hover:bg-muted transition-colors text-sm rounded-2xl"
             aria-label="Email"
           >
             <Mail className="w-4 h-4" />
@@ -34,7 +73,7 @@ export function HeroSection({ content }: HeroSectionProps) {
             href={content.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-4 py-2 border border-border hover:bg-muted transition-colors text-sm"
+            className="inline-flex items-center gap-2 px-4 py-2 border border-border hover:bg-muted transition-colors text-sm rounded-2xl"
             aria-label="GitHub"
           >
             <Github className="w-4 h-4" />
@@ -44,14 +83,14 @@ export function HeroSection({ content }: HeroSectionProps) {
             href={content.linkedin}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-4 py-2 border border-border hover:bg-muted transition-colors text-sm"
+            className="inline-flex items-center gap-2 px-4 py-2 border border-border hover:bg-muted transition-colors text-sm rounded-2xl"
             aria-label="LinkedIn"
           >
             <Linkedin className="w-4 h-4" />
             <span>LinkedIn</span>
           </a>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

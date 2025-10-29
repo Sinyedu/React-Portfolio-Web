@@ -21,7 +21,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${ibmPlexMono.variable} font-mono antialiased`}>
+      <body
+        className={`${ibmPlexMono.variable} font-mono antialiased min-h-screen overflow-y-auto`}
+      >
         {children}
       </body>
     </html>

@@ -1,5 +1,8 @@
+"use client";
+
 import { Project } from "@/core/types";
 import { ExternalLink } from "lucide-react";
+import { motion } from "framer-motion";
 
 interface ProjectsSectionProps {
   projects: Project[];
@@ -8,19 +11,23 @@ interface ProjectsSectionProps {
 export function ProjectsSection({ projects }: ProjectsSectionProps) {
   return (
     <section id="projects" className="container mx-auto px-4 py-16 md:py-24">
-      <div className="max-w-5xl">
+      <div className="max-w-5xl mx-auto">
         <div className="mb-6">
           <span className="text-sm text-muted-foreground">$ ls projects/</span>
         </div>
         <h2 className="text-3xl md:text-4xl font-semibold mb-12">Projects</h2>
 
         <div className="grid gap-6 md:grid-cols-2">
-          {projects.map((project) => (
-            <a
+          {projects.map((project, index) => (
+            <motion.a
               key={project.id}
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.6, delay: index * 0.15 }}
               className="group border border-border bg-card p-6 hover:bg-muted transition-colors"
             >
               <div className="flex items-start justify-between mb-4">
@@ -49,7 +56,7 @@ export function ProjectsSection({ projects }: ProjectsSectionProps) {
                   </span>
                 ))}
               </div>
-            </a>
+            </motion.a>
           ))}
         </div>
       </div>

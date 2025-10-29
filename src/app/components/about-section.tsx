@@ -1,4 +1,7 @@
+"use client";
+
 import { AboutContent } from "@/core/types";
+import { motion } from "framer-motion";
 
 interface AboutSectionProps {
   content: AboutContent;
@@ -8,10 +11,17 @@ interface AboutSectionProps {
 export function AboutSection({ content, skills }: AboutSectionProps) {
   return (
     <section id="about" className="container mx-auto px-4 py-16 md:py-24">
-      <div className="max-w-3xl">
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.6 }}
+        className="max-w-3xl mx-auto"
+      >
         <div className="mb-6">
           <span className="text-sm text-muted-foreground">$ cat about.txt</span>
         </div>
+
         <h2 className="text-3xl md:text-4xl font-semibold mb-8">
           {content.title}
         </h2>
@@ -34,7 +44,7 @@ export function AboutSection({ content, skills }: AboutSectionProps) {
             ))}
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

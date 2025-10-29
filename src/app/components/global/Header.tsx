@@ -1,16 +1,19 @@
+"use client";
+
 import Link from "next/link";
 
 export function Header() {
   return (
-    <header className="border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="fixed top-0 left-0 w-full z-50 border-b border-border bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto px-4 py-4">
         <nav className="flex items-center justify-between">
           <Link
-            href="/"
+            href="#home"
             className="text-sm font-medium hover:text-accent transition-colors"
           >
             ~/portfolio
           </Link>
+
           <div className="flex items-center gap-6">
             <Link
               href="#about"

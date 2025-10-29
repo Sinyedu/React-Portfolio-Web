@@ -6,6 +6,7 @@ export interface HeroContent {
   github: string;
   linkedin: string;
   twitter: string;
+  image?: string;
 }
 
 export interface AboutContent {
