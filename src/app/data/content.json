@@ -1,15 +1,15 @@
 {
   "hero": {
     "name": "Simon Erik Nyblom",
-    "title": "Frontend Developer with a passion for general development",
-    "description": "Building digital experiences with modern web technologies. Focused on clean code, performance, and user experience.",
+    "title": "Frontend Developer that loves tinkering with technology",
+    "description": "Building digital experiences with modern web technologies. Focused on clean code, performance, and user experience. Omarchy btw",
     "email": "nyblomsimon@gmail.com",
     "github": "https://github.com/sinyedu",
     "linkedin": "https://linkedin.com/in/simonnyblom"
   },
   "about": {
     "title": "About",
-    "content": "I'm a developer passionate about creating elegant solutions to complex problems. With expertise in React, TypeScript, and Node.js, I build scalable applications that users love. When I'm not coding, you'll find me exploring new technologies or contributing to open source."
+    "content": "I'm a Frontend Developer that thrives in enviroments that are unknown, also one that brings new technologies to the forefront. Overall I'm a tech guy who loves messing with IT"
   },
   "skills": {
     "Programming Languages": [
