@@ -1,4 +1,4 @@
-"use client";
+
 
 import { AboutSection } from "@/app/components/about-section";
 import { ContactSection } from "@/app/components/contact-section";
@@ -12,7 +12,7 @@ import contentJSON from "@/app/data/content.json";
 import projectsJSON from "@/app/data/projects.json";
 import experiencesJSON from "@/app/data/experiences.json";
 
-import type { ContentData, ProjectsData, Experience } from "@/core/types";
+import { ContentData, ProjectsData, Experience } from "@/core/types";
 
 export default function HomePage() {
   const content: ContentData = contentJSON as ContentData;
